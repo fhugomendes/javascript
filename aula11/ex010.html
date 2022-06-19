@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <style>
+        body {
+            background-color: #ffb80398;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        input {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        #verificar:hover {
+            background-color: lightgray;
+        }
+
+        #res {
+            padding-top: 1em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas DETRAN</h1>
+    Velocidade do veiculo: <input type="number" name="velvei" id="velvei">
+    km/h <input id="verificar" type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            velvei = window.document.getElementById('velvei')
+            vel = Number(velvei.value)
+            res = window.document.getElementById('res')
+            res.innerHTML = `Sua velocidade atual é de ${vel} Km/h`
+            if(vel > 60){
+                res.innerHTML += '<p>Você esta acima do limite permitido de 60km, <strong>MULTADO!</strong></p>'
+            }else{
+                res.innerHTML += '<p>Você esta dentro do limite permitido de 60km. <strong>Continue!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>

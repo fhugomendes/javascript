@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: #FCEA10;
+            color: #6ACC1A;
+            font-weight: bold;
+        }
+
+        input {
+            background-color: #6ACC1A;
+        }
+
+        div {
+            padding-top: 1em;
+        }
+
+        strong {
+            color: #0C9B18;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra Se Você É Estrangeiro:</h1>
+    Digite seu País: <input type="text" name="nacio" id="nacio">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res"></div>
+    <script>
+        function enviar(){
+            txtn = window.document.getElementById('nacio')
+            textmai = String(txtn.value.toUpperCase())
+            res = window.document.getElementById('res')
+            res.innerHTML = `Você nasceu no(a) ${textmai}<br>`
+            if(textmai == 'BRASIL'){
+                res.innerHTML += 'Você é <strong>Brasileiro</strong>'
+            }else{
+                res.innerHTML += 'Você é <strong>Estrangeiro</strong>'
+            }
+        }  
+    </script>
+</body>
+</html>

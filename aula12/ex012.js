@@ -1,11 +1,12 @@
-var idade = 128
-console.log (`Você tem ${idade}`)
-if(idade < 16){
-    console.log('Você não pode votar')
-}else if(idade >= 129){
-    console.log('Não aceitamos votos de imortais')
-}else if(idade < 18 || idade >= 65){
-    console.log('Voto opcional')
+var hora_atual = new Date()
+var hora = hora_atual.getHours()
+console.log(`Agora são extamente ${hora} horas`)
+if(hora > 5 && hora < 12){
+    console.log('Bom dia')
+}else if(hora > 11 && hora < 18){
+    console.log('Boa tarde')
+}else if(hora >= 18 && hora <= 23){
+    console.log('Boa noite')
 }else{
-    console.log('Voto obrigatório')
+    console.log('Boa madrugada')
 }

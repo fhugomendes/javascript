@@ -20,12 +20,24 @@ section {
     text-align: center;
     margin-inline: auto;
     max-width: 500px;
-    height: 350px;
+    min-width: 350px;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+#msg {
+    padding-top: 2em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#img {
+    padding-top: 4em;
 }
 
 footer {
     color: white;
     text-align: center;
+    padding-top: 1.5em;
 }

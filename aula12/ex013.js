@@ -1,12 +1,29 @@
-var hora_atual = new Date()
-var hora = hora_atual.getHours()
-console.log(`Agora são extamente ${hora} horas`)
-if(hora > 5 && hora < 12){
-    console.log('Bom dia')
-}else if(hora > 11 && hora < 18){
-    console.log('Boa tarde')
-}else if(hora >= 18 && hora <= 23){
-    console.log('Boa noite')
-}else{
-    console.log('Boa madrugada')
+var dia_atual = new Date()
+var dia = dia_atual.getDay()
+switch(dia){
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda-Feira')
+        break
+    case 2:
+        console.log('Terça-Feira')
+        break
+    case 3:
+        console.log('Quarta-Feira')
+        break
+    case 4:
+        console.log('Quinta-Feira')
+        break
+    case 5:
+        console.log('Sexta-Feira')
+        break
+    case 6:
+        console.log('Sábado')
+        break
+    default:
+        console.log('ERRO! Data inválida')
+        break
+
 }

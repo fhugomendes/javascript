@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(70, 142, 236);
+    background-color: gray;
 }
 
 header {
@@ -20,9 +20,40 @@ section {
     text-align: center;
     margin-inline: auto;
     max-width: 500px;
-    height: 350px;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+p {
+    padding: 10px;
+}
+
+input[name='nasc']{
+    max-width: 5em;
+    text-align: center;
+}
+
+#res {
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    margin-inline: auto;
+}
+
+button {
+    margin-bottom: 15px;
+    padding: 3px;
+    background-color: rgb(80, 79, 79);
+    border: 1.7px solid rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: lightgray;
 }
 
 footer {

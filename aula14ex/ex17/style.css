@@ -17,15 +17,36 @@ header {
 
 section {
     background-color: white;
-    text-align: center;
     margin-inline: auto;
     max-width: 500px;
-    height: 350px;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+div {
+    padding: 10px;
+    display: flex;
+}
+
+#button {
+    margin-left: 10px;
+    background-color: rgb(70, 142, 236);
+    color: white;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#button:hover {
+    background-color: rgba(70, 142, 236, 0.575);
+}
+
+select {
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
     color: white;
     text-align: center;
+    padding: 10px;
 }

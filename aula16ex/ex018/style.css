@@ -20,9 +20,35 @@ section {
     text-align: center;
     margin-inline: auto;
     max-width: 500px;
-    height: 350px;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+p {
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.botao {
+    background-color: rgb(70, 142, 236);
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    padding: 1px 3px;
+    color: white;
+}
+
+.botao:hover {
+    background-color: rgba(70, 142, 236, 0.5);
+}
+
+#flista {
+    width: 150px;
+    margin: 10px 10px 15px;
+}
+
+#res {
+    padding: 20px;
+    text-align: justify;
+    font-weight: bold;
 }
 
 footer {
